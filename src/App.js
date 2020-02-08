@@ -3,12 +3,16 @@ import './App.css';
 import './imagebank/matrix.jpg'
 function App() {
 
+
+  const newNum = ("")
+
   const proPerty = [1, 2, 3]
 
-  const onAdd = e => {
-    proPerty.push(e)
+  const onAdd = newNum => {
+    proPerty.push(newNum)
 
   };
+console.log(proPerty)
 
   return (
     <div>
@@ -17,13 +21,14 @@ function App() {
 
       <form>
         <input
-          value= {}
-          onChange = {}
+        type= {''}
+          //value={}
+          //onChange = {}
         />
 
         <button
           type="button"
-          value=""
+          value="buton"
           onClick={onAdd}
         >
           Submit to append!
