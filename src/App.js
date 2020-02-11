@@ -3,16 +3,9 @@ import './App.css';
 import './imagebank/matrix.jpg'
 function App() {
 
+    const proPerty = [1, 2, 3]
 
-  const newNum = ("")
-
-  const proPerty = [1, 2, 3]
-
-  const onAdd = newNum => {
-    proPerty.push(newNum)
-
-  };
-console.log(proPerty)
+  console.log(proPerty)
 
   return (
     <div>
@@ -20,19 +13,24 @@ console.log(proPerty)
       {/* <img>src={matrix.jpg}/img> alt={'Image not displayed'} */}
 
       <form>
+        <label>Value</label><br/>
+
         <input
-        type= {''}
-          //value={}
-          //onChange = {}
+          type="text"
+          id="input" 
+          name= "input"
+          //onChange={newVal}
+          
         />
 
         <button
-          type="button"
-          value="buton"
-          onClick={onAdd}
+          type="submit"
+          name="button"
+          //onClick={onAdd()}
         >
-          Submit to append!
+          Submit!
         </button><br />
+
       </form>
       {proPerty}
     </div>
